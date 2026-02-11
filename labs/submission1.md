@@ -84,8 +84,6 @@
 
 ### Template Verification
 
-<!-- TODO: After pushing to main and opening PR from feature/lab1, take a screenshot showing the template auto-fills -->
-
 The PR template was committed to the main branch first (as required by GitHub), then a feature branch was created for the lab submission. When opening the PR, the template sections automatically populated the description field.
 
 ### How Templates Improve Collaboration
