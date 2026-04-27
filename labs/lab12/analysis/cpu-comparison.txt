@@ -1,0 +1,13 @@
+=== CPU Model Comparison ===
+Host CPU:
+Architecture:                    aarch64
+Vendor ID:                       ARM
+Model name:                      Neoverse-N1
+
+runc container CPU (passthrough):
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU part	: 0xd0c
+
+Note: runc exposes the host CPU directly.
+Kata would expose the VM virtual CPU (configured by hypervisor).

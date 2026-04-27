@@ -1,0 +1,6 @@
+=== Kernel Modules Count ===
+Host kernel modules: 235
+runc container view: 235
+
+Note: runc shows host modules through the shared kernel.
+Kata guest would show only modules loaded in its own minimal kernel.

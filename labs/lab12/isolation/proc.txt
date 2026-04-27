@@ -1,0 +1,6 @@
+=== /proc Entries Count ===
+Host: 416
+runc container: 62
+
+Note: runc shows nearly the same /proc as host (with masked items).
+Kata would show a much smaller /proc — only the guest VM processes.
