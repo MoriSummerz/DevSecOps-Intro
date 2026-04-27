@@ -1,0 +1,15 @@
+=== Kernel Version Comparison ===
+Host kernel (runc shares this): 5.15.0-1027-oracle
+runc container kernel (cat /proc/version): Linux version 5.15.0-1027-oracle (buildd@bos02-arm64-076) (gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #33-Ubuntu SMP Fri Jan 6 16:30:16 UTC 2023
+
+Note: With runc, container shares the host kernel directly.
+On Kata Containers, this command would return the guest VM kernel
+(typically a separate Kata-shipped kernel, e.g. 6.12.x), proving
+the workload boots inside its own KVM-backed VM.
+
+kata-runtime kata-check on this host:
+time="2026-04-27T20:32:18Z" level=warning msg="Not running network checks as super user" arch=arm64 name=kata-runtime pid=1870708 source=runtime
+System is capable of running Kata Containers
+time="2026-04-27T20:32:18Z" level=error msg="cannot open kvm device: no such file or directory" arch=arm64 check-type=full device=/dev/kvm name=kata-runtime pid=1870708 source=runtime
+time="2026-04-27T20:32:18Z" level=error msg="no such file or directory" arch=arm64 name=kata-runtime pid=1870708 source=runtime
+no such file or directory

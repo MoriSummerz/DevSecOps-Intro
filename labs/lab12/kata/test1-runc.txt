@@ -1,0 +1,1 @@
+Linux 184ff3b0209c 5.15.0-1027-oracle #33-Ubuntu SMP Fri Jan 6 16:30:16 UTC 2023 aarch64 Linux

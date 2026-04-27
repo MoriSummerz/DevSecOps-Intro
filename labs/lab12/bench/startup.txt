@@ -1,0 +1,19 @@
+=== Startup Time Comparison ===
+
+--- runc (nerdctl, alpine echo) — 5 trials ---
+trial1: real=0.44s user=0.06s sys=0.02s
+trial2: real=0.41s user=0.06s sys=0.03s
+trial3: real=0.44s user=0.05s sys=0.04s
+trial4: real=0.49s user=0.05s sys=0.03s
+trial5: real=0.43s user=0.05s sys=0.02s
+
+--- Kata attempt — fails with no /dev/kvm (cannot measure startup) ---
+time="2026-04-27T20:35:47Z" level=warning msg="cannot set cgroup manager to \"systemd\" for runtime \"io.containerd.kata.v2\""
+time="2026-04-27T20:35:47Z" level=fatal msg="failed to create shim task: Could not create the sandbox resource controller failed to add any hypervisor device to devices cgroup: unknown"
+Command exited with non-zero status 1
+kata-attempt: real=0.24s
+
+Note: Kata startup typically lands between 1.5-5s on KVM-capable hosts
+(VM boot dominates). On this host, the Kata sandbox cannot be created
+because /dev/kvm is absent (Oracle Cloud Ampere A1 KVM-guest tenant
+without nested virtualization).

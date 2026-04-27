@@ -1,0 +1,2 @@
+Linux dca35e85aff0 5.15.0-1027-oracle #33-Ubuntu SMP Fri Jan 6 16:30:16 UTC 2023 aarch64 Linux
+time="2026-04-27T20:32:54Z" level=error msg="forward signal child exited" error="ttrpc: closed: unknown"

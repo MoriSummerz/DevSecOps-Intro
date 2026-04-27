@@ -1,0 +1,14 @@
+=== Network Interfaces ===
+--- Host interfaces ---
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp0s3           UP             172.31.254.14/28 metric 100 fe80::17ff:fe0a:5204/64 
+docker0          UP             172.17.0.1/16 fe80::42:eeff:fe68:4f7/64 
+br-ad8823c19650  UP             172.22.0.1/16 fe80::42:22ff:fe5d:7835/64 
+veth73cf258@if16652 UP             fe80::c8a:d3ff:fefe:810e/64 
+veth5a463a7@if16916 UP             fe80::98d1:7dff:fe1d:12f1/64 
+amn0             UP             172.29.172.1/24 fe80::42:1ff:feb5:f593/64 
+br-447910f850a0  DOWN           172.18.0.1/16 fe80::42:b4ff:fe01:1789/64 
+br-8802b8b3821d  UP             172.26.0.1/16 fe80::42:97ff:fe88:56df/64 
+br-d532bf2feb1f  UP             192.168.0.1/20 fe80::42:e8ff:fe81:4f16/64 
+
+--- runc container interfaces ---
